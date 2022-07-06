@@ -1,0 +1,9 @@
+
+
+
+MONGODB=mongodb://localhost:27017/nest-pokemon
+PORT=3000
+DEFAULT_LIMIT=10
+
+SECRET_KEY=
+JWT_SEED=
