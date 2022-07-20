@@ -25,7 +25,6 @@ COPY package.json yarn.lock ./
 RUN yarn install --prod
 
 COPY --from=builder /app/dist ./dist
-COPY ./.env.prod /.env
 
 # # Copiar el directorio y su contenido
 # RUN mkdir -p ./pokedex

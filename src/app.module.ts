@@ -21,6 +21,12 @@ import { JoiValidationSchema } from './config/joi.validation';
     ServeStaticModule.forRoot({
       rootPath: join(__dirname,'..','public'), 
     }),
+
+// -- select url, 'http://localhost:3000/api/files/product/' || url from product_images;
+
+// -- update product_images set url = 'http://localhost:3000/api/files/product/' || url
+
+
     
     MongooseModule.forRoot( process.env.MONGODB ),
     

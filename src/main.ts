@@ -4,12 +4,9 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   
-  console.log('MONGO', process.env.MONGODB);
-
   const app = await NestFactory.create(AppModule);
 
   app.setGlobalPrefix('api/v2');
-
 
   app.useGlobalPipes(
     new ValidationPipe({
